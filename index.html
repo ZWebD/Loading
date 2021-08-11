@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Image</title>
+</head>
+<body>
+
+    <div> 
+        <img id="img" src="https://img.global.news.samsung.com/in/wp-content/uploads/2019/06/Quantum-HDR-8x.jpg" style="visibility: hidden" >
+    </div>
+    <script>
+        // making the image visible after the DOM load the file
+        function ready() {
+                console.log("load");
+                document.getElementById("img").setAttribute("style","visibility: visible; width: 100%");            
+            }
+            window.addEventListener("load",ready);        
+        </script>
+    
+</body>
+</html>
